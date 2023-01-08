@@ -42,6 +42,10 @@
             this.CHB_Dobott4 = new System.Windows.Forms.CheckBox();
             this.CHB_Dobott5 = new System.Windows.Forms.CheckBox();
             this.LB_Dobasok = new System.Windows.Forms.Label();
+            this.DGV_Tablazat = new System.Windows.Forms.DataGridView();
+            this.Kat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pont = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Tablazat)).BeginInit();
             this.SuspendLayout();
             // 
             // BTN_Dobas
@@ -165,17 +169,51 @@
             // LB_Dobasok
             // 
             this.LB_Dobasok.AutoSize = true;
-            this.LB_Dobasok.Location = new System.Drawing.Point(19, 126);
+            this.LB_Dobasok.Location = new System.Drawing.Point(12, 90);
             this.LB_Dobasok.Name = "LB_Dobasok";
             this.LB_Dobasok.Size = new System.Drawing.Size(13, 15);
             this.LB_Dobasok.TabIndex = 13;
             this.LB_Dobasok.Text = "0";
+            // 
+            // DGV_Tablazat
+            // 
+            this.DGV_Tablazat.AllowUserToAddRows = false;
+            this.DGV_Tablazat.AllowUserToDeleteRows = false;
+            this.DGV_Tablazat.AllowUserToResizeColumns = false;
+            this.DGV_Tablazat.AllowUserToResizeRows = false;
+            this.DGV_Tablazat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Tablazat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Kat,
+            this.Pont});
+            this.DGV_Tablazat.Location = new System.Drawing.Point(209, 12);
+            this.DGV_Tablazat.Name = "DGV_Tablazat";
+            this.DGV_Tablazat.RowHeadersVisible = false;
+            this.DGV_Tablazat.RowTemplate.Height = 25;
+            this.DGV_Tablazat.Size = new System.Drawing.Size(180, 375);
+            this.DGV_Tablazat.TabIndex = 14;
+            // 
+            // Kat
+            // 
+            this.Kat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Kat.HeaderText = "Kategória";
+            this.Kat.Name = "Kat";
+            this.Kat.ReadOnly = true;
+            this.Kat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Pont
+            // 
+            this.Pont.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Pont.HeaderText = "Pontszám";
+            this.Pont.Name = "Pont";
+            this.Pont.ReadOnly = true;
+            this.Pont.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DGV_Tablazat);
             this.Controls.Add(this.LB_Dobasok);
             this.Controls.Add(this.CHB_Dobott5);
             this.Controls.Add(this.CHB_Dobott4);
@@ -192,6 +230,7 @@
             this.Controls.Add(this.BTN_Dobas);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Tablazat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,5 +252,8 @@
         private CheckBox CHB_Dobott4;
         private CheckBox CHB_Dobott5;
         private Label LB_Dobasok;
+        private DataGridView DGV_Tablazat;
+        private DataGridViewTextBoxColumn Kat;
+        private DataGridViewTextBoxColumn Pont;
     }
 }
