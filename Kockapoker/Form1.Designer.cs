@@ -316,11 +316,16 @@
             this.Controls.Add(this.LB_Dobott1);
             this.Controls.Add(this.LB_dobott_text);
             this.Controls.Add(this.BTN_Dobas);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(375, 489);
+            this.MinimumSize = new System.Drawing.Size(375, 489);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Kockapóker";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Tablazat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
